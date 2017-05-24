@@ -1,0 +1,18 @@
+[package]
+name = "xmz-test-shiftregisters"
+version = "0.1.0"
+authors = ["zzeroo <co@zzeroo.com>"]
+
+[dependencies]
+error-chain = "0.10"
+rand = "0.3"
+serde = "1"
+serde_derive = "1"
+sysfs_gpio = "0.5"
+
+
+[dependencies.clap]
+version = "~2.24"
+default-features = false
+ # Cherry-pick the features you'd like to use
+features = [ "color" ]
